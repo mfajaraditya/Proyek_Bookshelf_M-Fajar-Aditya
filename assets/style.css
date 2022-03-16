@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: grey;
+}
+
+.container-header {
+  display: flex;
+  background-color: #17746c;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  background-color: #dfe2b6;
+  height: 200px;
+  padding: 10px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: #219f94;
+  display: flex;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  width: 550px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper,
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dfe2b6;
+  margin: 12px 0 12px 0;
+  color: rgb(63, 56, 56);
+  border-radius: 10px;
+  padding: 10px 0 25px 0;
+  width: 800px;
+}
+
+input[type="text"],
+input[type="date"] {
+  font-family: "Fira Code", monospace;
+  background: #2fd6c8b6;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.trash-button {
+  background: url("../assets/img/trash-bin.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button {
+  background: url("../assets/img/return.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button {
+  background: url("../assets/img/check-list.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.submit {
+  border-radius: 10px;
+  margin-top: 8px;
+  padding: 12px 24px;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #2fd6c8b6;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17746c;
+  color: white;
+  border-radius: 10px;
+  height: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .h2 {
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

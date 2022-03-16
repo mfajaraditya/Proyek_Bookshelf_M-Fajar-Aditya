@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="assets/img/three-books.ico" type="image" sizes="16x16">
+    <title>Bookshelf App</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <h2>Bookshelf App</h2>
+    </div>
+    <section>
+    <div class="wrapper">
+      <h2>Silahkan masukkan data buku:</h2>
+      <form action="#" class="form" id="form">
+        <div class="form-title">
+          <label for="title">Judul Buku:</label><br />
+          <input type="text" class="title" id="title"required placeholder="Masukkan Judul Buku"/>
+        </div>
+        <div class="form-writer">
+          <label for="writer" class="writer">Penulis Buku:</label><br />
+          <input type="text" class="writer" id="writer" required placeholder="Masukkan Penulis Buku"/>
+        </div>
+        <div class="form-year" class="year">
+          <label for="year" class="year">Tahun Terbit:</label><br />
+          <input type="text" class="year" id="year" required placeholder="Masukkan Tahun Terbit"/>
+        </div>
+        <input type="submit" class="submit">
+      </form>
+    </div>
+    <div class="container" id="container" name="container">
+        <h2>Belum Selesai Dibaca</h2>
+        <div class="list-item" id="bookshelf"></div>
+    </div>
+    <div class="container" id="container" name="container">
+        <h2>Selesai Dibaca</h2>
+        <div class="list-item" id="completed-bookshelf">
+        </div>
+    </div>
+  </section>
+    <footer>
+      <p>Bookshelf &copy; 2022 M Fajar Aditya</p>
+    </footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
